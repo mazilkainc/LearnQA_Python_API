@@ -7,7 +7,7 @@ locator = '//*[contains(text(),"Top 25 most common passwords by year according t
 wiki_list = tree.xpath(locator)
 
 temp = []
-for password in  passwords:
+for password in  wiki_list:
     password = password[:-1]
     if password not in temp:
         temp.append(password)
